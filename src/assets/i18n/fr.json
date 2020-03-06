@@ -1,0 +1,13 @@
+{
+    "tool_TitleTxt": "Convertisseur de devises",
+    "equal_label": "Equals",
+    "targetCurrency_label": "Devise cible",
+    "baseCurrency_label": "Devise de base",
+    "amount_placeholder": "Entrez le montant ici ..",
+    "calculatedAmount_label":"Montant calculé",
+    "userInfo_label":"Entrez le montant dans la zone de saisie pour obtenir la somme convertie",
+    "amountInput_label":"Montant",
+    "darkTheme_label":"Thème sombre",
+    "defaultTheme_Label":"Thème par défaut",
+    "language_Label":"Changer de langue"
+}

@@ -1,0 +1,33 @@
+<ng-container *ngIf="(baseCurrencies$ | async) as baseCurr">
+    <div class="tool-container" [ngClass]="{'dark-theme': (theme$| async)}">
+        <app-utility></app-utility>
+        <h1>{{'tool_TitleTxt'| translate}}</h1>
+        <p>{{'userInfo_label'| translate}}</p>
+        <div class="md-padding">
+            <label class="clear-fix" for="baseCurrency">{{'baseCurrency_label'| translate}}</label>
+            <select class="fixed-width md-size" name="baseCurrency" #baseCurrency id="id_baseCurrency"
+                (change)="onBaseCurrencyChange($event.target.value)">
+                <option value="null">--Select Base--</option>
+                <option *ngFor="let curr of baseCurr" [value]="curr">{{curr}}</option>
+            </select>
+        </div>
+        <div class="md-padding"> 
+            <label class="clear-fix" for="id_targetCurrency">{{'targetCurrency_label'| translate}}</label>
+            <select class="fixed-width md-size" name="targetCurrency" id="id_targetCurrency"
+                (change)="onTargetCurrencyChange($event.target.value,baseCurrency.value)">
+                <option value="null">--Select Target--</option>
+                <option *ngFor="let targetCurr of (targetCurrencies$ |async)" [value]="targetCurr.target">
+                    {{targetCurr?.target}}</option>
+            </select>
+        </div>
+        <div class="md-padding">
+            <label class="clear-fix" for="id_amountBox">{{'amountInput_label'| translate}}</label>
+            <input class="fixed-width md-size" type="number" #amountInput id="id_amountBox" placeholder="{{'amount_placeholder'| translate}}"
+                (keyup)="amount$.next($event.target.value)">
+        </div>
+        <div class="md-padding">
+            <label class="clear-fix">{{'calculatedAmount_label'| translate}} : </label>
+            <span> {{sum$ | async}}</span>
+        </div>
+    </div>
+</ng-container>

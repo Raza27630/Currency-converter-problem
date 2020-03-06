@@ -1,0 +1,13 @@
+{
+    "tool_TitleTxt": "Währungsrechner",
+    "equal_label": "Equals",
+    "targetCurrency_label": "Zielwährung",
+    "baseCurrency_label": "Hauptwährung",
+    "amount_placeholder": "Geben Sie hier den Betrag ein...",
+    "calculatedAmount_label":"Berechneter Betrag",
+    "userInfo_label":"Geben Sie den Betrag in das Eingabefeld ein, um die umgerechnete Summe zu erhalten",
+    "amountInput_label":"Menge",
+    "darkTheme_label":"Dunkles Thema",
+    "defaultTheme_Label":"Standardthema",
+    "language_Label":"Sprache ändern"
+}

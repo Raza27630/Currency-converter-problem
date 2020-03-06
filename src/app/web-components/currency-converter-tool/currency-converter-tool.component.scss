@@ -1,0 +1,42 @@
+$base-color-default: #f2f2f2;
+$base-color-dark: #242424;
+$font-color-default:black;
+$font-color-dark:#f2f2f2;
+$border-color-default:black;
+$border-color-dark:yellow;
+.tool-container{
+    border: 2px solid;
+    padding: 7px;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    h1,p{
+        text-align: center;
+        justify-content: space-around;
+    }
+    p{
+        font-size: 20px;
+    }
+    .clear-fix{
+        width: 150px;
+        display: inline-block;
+    }
+    .fixed-width{
+        display: inline-block;
+        width: calc(100% - 160px);
+    }
+    .md-padding{
+        padding: 5px;
+        margin: 0;
+    }
+    &.dark-theme{
+        background-color: $base-color-dark;
+        color: $font-color-dark;
+        border-color: $border-color-dark;
+    }
+    &.default-theme{
+        background-color: $base-color-default;
+        color: $font-color-default;
+        border-color: $border-color-default;
+    }
+}

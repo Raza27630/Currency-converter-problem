@@ -1,0 +1,13 @@
+{
+    "tool_TitleTxt": "Currency Converter",
+    "equal_label": "Equals",
+    "targetCurrency_label": "Target Currency",
+    "baseCurrency_label": "Base Currency",
+    "amount_placeholder": "Enter amount here..",
+    "calculatedAmount_label":"Calculated Amount",
+    "userInfo_label":"Enter Amount in input box to get coverted sum",
+    "amountInput_label":"Amount",
+    "darkTheme_label":"Dark Theme",
+    "defaultTheme_Label":"Default Theme",
+    "language_Label":"Change Language"
+}

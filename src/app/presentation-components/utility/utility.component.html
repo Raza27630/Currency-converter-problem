@@ -1,0 +1,18 @@
+<div>
+    <div class="left-align">
+        <input type="radio" id="dark_theme_id" name="theme" [value]="theme.DarkTheme"
+            (change)="onThemeChange($event.target.value)">
+        <label for="dark_theme_id">{{'darkTheme_label'| translate}}</label><br>
+        <input type="radio" id="default_theme_id" name="theme" [value]="theme.DefaultTheme" checked
+            (change)="onThemeChange($event.target.value)">
+        <label for="default_theme_id">{{'defaultTheme_Label'| translate}}</label><br>
+    </div>
+    <div class="right-align">
+        <label for="lang_select_id">{{'language_Label'| translate}}</label>
+        <select (change)="onLanguageChange($event.target.value)" id="lang_select_id">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+        </select>
+    </div>
+</div>
